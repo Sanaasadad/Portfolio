@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    height: 500px;
+}
+body{
+    background-image: url(/assets/flat-lay-workstation-with-copy-space-laptop.jpg);
+}
+h1{
+    color: white;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
