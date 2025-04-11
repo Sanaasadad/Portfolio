@@ -1,21 +1,26 @@
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
 
 @Component({
-  selector: 'app-projets',
-  standalone: true,
-  imports: [RouterLink],
+  selector: 'app-projet',
   templateUrl: './projets.component.html',
-  styleUrl: './projets.component.css'
+  styleUrls: ['./projets.component.css']
 })
-export class ProjectsComponent {
-  projects = this.ProjectService.getProjects();
+export class ProjetsComponent {
   
-  constructor(private ProjectService: 'projectsService') { }
-  
-  ngOnInit(): void {
-    // Initialisation si nécessaire
-  }
+  projets = [
+    {
+      titre: "Mon premier projet",
+      description: "Un site web simple créé avec HTML/CSS",
+      image: "assets/projet1.jpg",
+      technologies: ["HTML", "CSS"],
+      lienGithub: "https://github.com"
+    },
+    {
+      titre: "Projet Angular", 
+      description: "Mon premier essai avec Angular",
+      image: "assets/projet2.jpg",
+      technologies: ["Angular", "TypeScript"],
+      lienDemo: "https://mon-site.com"
+    }
+  ];
 }
-
-
