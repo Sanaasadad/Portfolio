@@ -1,0 +1,17 @@
+section {
+    padding: 60px 20px;
+    max-width: 800px;
+    margin: auto;
+    color: white; 
+    background: rgba(0, 0, 0, 0.5); 
+  }
+  section p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  #about{
+      height: 100%;
+      font-family: 'Times New Roman', Times, serif;
+    
+  }
+  

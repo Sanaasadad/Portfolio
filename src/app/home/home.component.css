@@ -1,23 +1,58 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    height: 500px;
-}
-body{
-    background-image: url(/assets/flat-lay-workstation-with-copy-space-laptop.jpg);
-}
-h1{
-    color: white;
-    font-weight: bold;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
     font-family: 'Times New Roman', Times, serif;
+  }
+  
+  #home {
+    height: 100vh;
+    background: url('/assets/flat-lay-workstation-with-copy-space-laptop.jpg') no-repeat center center/cover;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-p{
     color: white;
-    font-family: 'Times New Roman', Times, serif;  
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .h1 {
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: #f0f8ff;
+    margin: 10px 0;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+  }
+  
+  .social-icons {
+    margin-top: 1.5rem;
     display: flex;
+    gap: 1.5rem;
     justify-content: center;
-    align-items: center;
+  }
+  
+  .social-icons a {
+    font-size: 2rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 0.6rem;
+    border-radius: 50%;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    background-color: #00bcd4;
+    transform: scale(1.1);
+  }
+  @media (max-width: 768px) {
+    .h1 {
+      font-size: 1.8rem;
+    }
 }
+  
+  
